@@ -1,0 +1,12 @@
+{
+  "journeys": [
+    {
+      "id": "vetpartners",
+      "title": "VetPartners → VetUK",
+      "description": "End-to-end cross-domain journey from vet search to pet subscription, powered by Adobe Experience Cloud",
+      "icon": "🐾",
+      "accentColor": "#D4932A",
+      "screenCount": 15
+    }
+  ]
+}

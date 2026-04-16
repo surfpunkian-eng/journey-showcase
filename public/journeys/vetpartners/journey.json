@@ -1,0 +1,540 @@
+{
+  "id": "vetpartners",
+  "title": "VetPartners → VetUK Customer Journey",
+  "description": "End-to-end cross-domain journey from vet search to pet subscription, powered by Adobe Experience Cloud",
+  "branding": {
+    "primary": {
+      "name": "VetPartners",
+      "logoHtml": "vet<span style='font-weight:400'>Partners</span><span style='font-family:Open Sans,sans-serif;font-size:13px;color:#888;margin-left:4px;vertical-align:super'>UK</span>",
+      "navItems": ["About Us", "Our Services", "Find a Vet", "Your Career", "News & Advice"],
+      "homeScreen": "ai-search",
+      "colors": {
+        "main": "#D4932A",
+        "hover": "#C08425",
+        "accent": "#E74C3C",
+        "bg": "#FFFFFF",
+        "bg-warm": "#F8F6F3",
+        "text": "#2D2D2D",
+        "text-muted": "#666666",
+        "border": "#E8E4DF",
+        "nav-height": "80px"
+      }
+    },
+    "secondary": {
+      "name": "VetUK",
+      "logoHtml": "Vet<span style='font-weight:400'>UK</span>",
+      "tagline": "Pet Care Delivered",
+      "topBarText": "Free Delivery on all orders over £49.00 ›",
+      "homeScreen": "subscription",
+      "categories": ["Pet Meds", "Dog", "Cat", "Horse", "Small Animal", "VetUK Own Brand", "Brands", "Offers"],
+      "trustItems": ["Free Delivery > £49", "Express Delivery Available", "Accredited Online Retailer", "Earn VetPoints"],
+      "colors": {
+        "main": "#6B2D8B",
+        "hover": "#5A2576",
+        "light": "#F3ECF8",
+        "text": "#1F2937",
+        "text-muted": "#6B7280",
+        "border": "#E5E7EB",
+        "green": "#059669",
+        "nav-height": "160px"
+      }
+    },
+    "platform": {
+      "name": "Adobe Experience Platform",
+      "colors": {
+        "bg": "#131327",
+        "card": "#1E1E3A",
+        "accent": "#1473E6",
+        "cyan": "#0D97D9"
+      }
+    }
+  },
+  "persona": {
+    "name": "Sarah Mitchell",
+    "firstName": "Sarah",
+    "email": "sarah.mitchell@email.com",
+    "phone": "+44 (0)29 2034 5678",
+    "mobile": "07700 123456",
+    "pet": {
+      "name": "Biscuit",
+      "breed": "Labrador Retriever",
+      "sex": "Male",
+      "age": "3 years"
+    },
+    "practice": "Park Veterinary Group",
+    "location": "Cardiff"
+  },
+  "screens": [
+    {
+      "id": "ai-search",
+      "type": "search",
+      "label": "AI Search",
+      "data": {
+        "query": "vets near me Cardiff",
+        "assistantLabel": "Copilot",
+        "results": [
+          {
+            "title": "Vets Near Me Cardiff - Find Local Veterinary Services",
+            "url": "www.vetpartners.com › find-a-vet › cardiff",
+            "snippet": "Find the best vets near you in Cardiff. Our network of friendly, experienced veterinary practices offers everything your pet needs. Book an appointment online today."
+          },
+          {
+            "title": "Cardiff Veterinary Services - Pet Healthcare",
+            "url": "www.cardiffvetservices.co.uk",
+            "snippet": "Trusted veterinary care in Cardiff for dogs, cats, rabbits and more. Emergency services available 24/7. RCVS registered veterinarians."
+          }
+        ],
+        "assistantCard": {
+          "intro": "Based on your search, I found a highly-rated practice that matches your needs:",
+          "name": "Park Veterinary Group",
+          "details": [
+            "📍 Sanatorium Road, Cardiff CF11 8DG",
+            "☎️ (029) 2034 1234",
+            "🕐 Mon-Fri: 8:30 AM - 6:00 PM | Sat: 9:00 AM - 1:00 PM"
+          ],
+          "rating": "★★★★★ 4.8 (127 reviews) • Annual health checks, Vaccinations, Dental care",
+          "ctaText": "Book Now",
+          "footer": "This practice is highly recommended for annual health check-ups and general pet care. Click 'Book Now' to view available appointment times."
+        }
+      }
+    },
+    {
+      "id": "find-vet",
+      "type": "directory",
+      "label": "Find a Vet",
+      "data": {
+        "activeNav": "Find a Vet",
+        "heading": "Our practices",
+        "searchValue": "Cardiff",
+        "mapLabel": "practices",
+        "items": [
+          { "id": "park", "name": "Park Veterinary Group", "address": "Sanatorium Road", "postcode": "Cardiff CF11 8DG", "featured": true, "badge": "🐾 Pet", "targetScreen": "practice" },
+          { "id": "st-david-pentwyn", "name": "St David Veterinary Centre", "address": "Pentwyn Road, Pentwyn", "postcode": "Cardiff CF23 7NQ", "featured": false, "badge": "🐾 Pet" },
+          { "id": "st-david-llanishen", "name": "St David Veterinary Centre", "address": "Pen-y-Wain Lane, Llanishen", "postcode": "Cardiff CF14 5DU", "featured": false, "badge": "🐾 Pet" },
+          { "id": "valley-vets", "name": "Valley Vets", "address": "Castle Street, Caerphilly", "postcode": "Caerphilly CF83 1ER", "featured": false, "badge": "🐾 Pet" }
+        ]
+      }
+    },
+    {
+      "id": "practice",
+      "type": "detail",
+      "label": "Practice",
+      "data": {
+        "activeNav": "Find a Vet",
+        "breadcrumb": "← See all Practices",
+        "name": "Park Veterinary Group",
+        "address": "Sanatorium Road\nCardiff CF11 8DG\n(029) 2034 1234",
+        "heroImageText": "📸 Practice Image",
+        "ctaText": "Book an Appointment",
+        "infoBoxes": [
+          {
+            "title": "Opening hours",
+            "content": "Monday – Friday: 8:30 AM – 6:00 PM\nSaturday: 9:00 AM – 1:00 PM\nSunday: Closed\n\nEmergency: 24/7 Available"
+          },
+          {
+            "title": "Services offered",
+            "items": [
+              { "icon": "💉", "label": "Vaccinations" },
+              { "icon": "🏥", "label": "Health Checks" },
+              { "icon": "😁", "label": "Dental Care" },
+              { "icon": "🔬", "label": "Surgery" }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "booking",
+      "type": "booking",
+      "label": "Book",
+      "data": {
+        "activeNav": "Find a Vet",
+        "heading": "Book Your Appointment",
+        "subtitle": "Park Veterinary Group — Cardiff",
+        "ctaText": "Confirm Appointment",
+        "consentText": "Yes, send me pet care tips and offers based on my pet's needs",
+        "fieldGroups": [
+          {
+            "title": "Your details",
+            "columns": 2,
+            "fields": [
+              { "label": "Your Name", "value": "Sarah Mitchell" },
+              { "label": "Email", "value": "sarah.mitchell@gmail.com" },
+              { "label": "Phone", "value": "07700 123456" }
+            ]
+          },
+          {
+            "title": "Pet details",
+            "columns": 2,
+            "fields": [
+              { "label": "Pet Name", "value": "Biscuit" },
+              { "label": "Breed", "value": "Labrador Retriever" },
+              { "label": "Pet Age", "value": "3 years" }
+            ]
+          },
+          {
+            "title": "Appointment details",
+            "columns": 1,
+            "fields": [
+              { "label": "Reason for Visit", "value": "Annual health check-up" },
+              { "label": "Preferred Date & Time", "value": "Tue 15 April — 2:30 PM" }
+            ]
+          }
+        ],
+        "sidebar": {
+          "title": "Why we ask",
+          "paragraphs": [
+            "Pet details help our vets personalise care recommendations based on your pet's breed, age, and health history. This ensures Biscuit gets the most effective treatment.",
+            "We'll use your contact information to send appointment reminders and follow-up care advice."
+          ]
+        }
+      }
+    },
+    {
+      "id": "confirmation",
+      "type": "confirmation",
+      "label": "Confirmed",
+      "data": {
+        "activeNav": "Find a Vet",
+        "heading": "Appointment Confirmed!",
+        "ctaText": "Continue",
+        "details": [
+          { "label": "Practice", "value": "Park Veterinary Group, Cardiff" },
+          { "label": "Date & Time", "value": "Tuesday, 15 April at 2:30 PM" },
+          { "label": "Pet", "value": "Biscuit (Labrador Retriever)" },
+          { "label": "Reason", "value": "Annual health check-up" }
+        ],
+        "nextStepsTitle": "What happens next",
+        "nextSteps": [
+          { "title": "SMS Reminder", "description": "You'll receive an SMS reminder on the day of your appointment to help you remember the time and location." },
+          { "title": "Personalised Recommendations", "description": "After your visit, we'll email personalised care recommendations based on Biscuit's health assessment." },
+          { "title": "Exclusive Partner Offers", "description": "As a Park Vet patient, Biscuit qualifies for exclusive offers from our partner VetUK on pet insurance and wellness products." }
+        ]
+      }
+    },
+    {
+      "id": "sms-reminder",
+      "type": "phone",
+      "label": "SMS",
+      "data": {
+        "time": "14:15",
+        "appTitle": "Messages",
+        "messages": [
+          { "sender": "Park Veterinary Group", "text": "Hi Sarah! Reminder: Biscuit's check-up is today at 2:30 PM at Park Veterinary Group, Cardiff. See you soon! 🐾" },
+          { "text": "Tip: Bring Biscuit's vaccination record if you have it." }
+        ],
+        "timestamp": "Today, 2:15 PM",
+        "ctaText": "Continue to Visit →"
+      }
+    },
+    {
+      "id": "post-visit",
+      "type": "status-card",
+      "label": "Visit",
+      "data": {
+        "icon": "✓",
+        "iconColor": "#27AE60",
+        "heading": "Biscuit's Check-Up is Complete!",
+        "testimonial": {
+          "text": "It was wonderful — Biscuit loved the team at Park Veterinary Group. They were so gentle and thorough.",
+          "author": "Sarah M.",
+          "stars": "★★★★★"
+        },
+        "sections": [
+          { "title": "What happens next", "text": "Your vet's personalised recommendations and an exclusive offer from our partner VetUK will arrive in your inbox shortly." }
+        ],
+        "ctaText": "Check Your Email →"
+      }
+    },
+    {
+      "id": "followup-email",
+      "type": "email",
+      "label": "Email",
+      "data": {
+        "from": "Park Veterinary Group <care@parkvets-cardiff.co.uk>",
+        "to": "sarah.mitchell@gmail.com",
+        "subject": "Biscuit's Health Report & Personalised Recommendations",
+        "headerColor": "#D4932A",
+        "headerText": "Park Veterinary Group — Cardiff",
+        "greeting": "Hi Sarah,",
+        "paragraphs": [
+          "Thank you for bringing Biscuit in for his check-up today. We're delighted to confirm that he's in excellent health and had a wonderful visit with our team!"
+        ],
+        "recommendations": {
+          "title": "Based on Biscuit's breed (Labrador Retriever) and age (3 years), your vet recommends:",
+          "items": [
+            "Joint support supplement to maintain healthy mobility as he grows",
+            "Premium adult dog food formulated for active Labradors",
+            "Schedule next dental check in 6 months"
+          ]
+        },
+        "divider": true,
+        "offerSection": {
+          "title": "An exclusive offer from our partner VetUK",
+          "transparencyNote": "VetUK is part of the VetPartners family. We share your information to provide personalised pet care recommendations. Manage your preferences anytime.",
+          "ctaText": "Get 20% Off + Free Next-Day Delivery on VetUK",
+          "ctaColor": "#6B2D8B"
+        },
+        "footerText": "You can unsubscribe from these emails at any time.",
+        "continueText": "Continue →"
+      }
+    },
+    {
+      "id": "crosssell-email",
+      "type": "email",
+      "label": "Cross-Sell",
+      "data": {
+        "from": "VetUK <hello@vetuk.co.uk>",
+        "to": "sarah.mitchell@gmail.com",
+        "subject": "Premium Nutrition for Biscuit — Your Exclusive Offer",
+        "headerColor": "#6B2D8B",
+        "headerText": "VetUK — Pet Care Delivered",
+        "greeting": "Hi Sarah,",
+        "paragraphs": [
+          "Your vet at Park Veterinary Group recommended premium nutrition for Biscuit. Here's an exclusive offer, just for you."
+        ],
+        "productCard": {
+          "imageIcon": "📦",
+          "imageBg": "#E0D5F0",
+          "imageColor": "#6B2D8B",
+          "bgColor": "#F5F0FA",
+          "borderColor": "#E0D5F0",
+          "name": "Skinner's Field & Trial — Active Working Dog 15kg",
+          "description": "Specially formulated for active Labradors with optimal protein and fat levels to support energy, muscle development, and coat health. Premium ingredients, trusted by vets.",
+          "prices": { "original": "£49.99", "current": "£39.99" },
+          "priceColor": "#6B2D8B"
+        },
+        "promoBanner": {
+          "bgColor": "#6B2D8B",
+          "code": "Your exclusive code: VETCARE20",
+          "details": "20% off + FREE next-day delivery"
+        },
+        "ctaButton": { "text": "Start My Subscription →", "color": "#6B2D8B" },
+        "transparencyNote": "You're receiving this because you opted in to pet care recommendations at Park Veterinary Group. VetUK is part of the VetPartners family.",
+        "continueText": "Shop Now →"
+      }
+    },
+    {
+      "id": "subscription",
+      "type": "product",
+      "label": "Subscribe",
+      "data": {
+        "personalisationBadge": "🎯 Recommended for Biscuit",
+        "heroTitle": "Premium Nutrition Match",
+        "heroSubtitle": "Tailored to Biscuit's breed and activity level",
+        "productIcon": "🐕‍🦺",
+        "productName": "Skinner's Field & Trial",
+        "productSubtitle": "Active Working Dog",
+        "sizes": ["10kg", "15kg", "20kg"],
+        "defaultSize": "15kg",
+        "originalPrice": "£49.99",
+        "discountedPrice": "£39.99",
+        "savingsText": "Save £10 per month • Cancel anytime",
+        "promoBanner": "Code VETCARE20 applied — 20% off + FREE next-day delivery",
+        "ctaText": "Add to Basket",
+        "sidebarCards": [
+          {
+            "title": "Why this food?",
+            "text": "Specially formulated for active Labradors like Biscuit.",
+            "benefits": [
+              "<strong>Joint Health:</strong> Enhanced glucosamine & chondroitin for active movement",
+              "<strong>Weight Management:</strong> Perfect calories for working breed metabolism",
+              "<strong>Glossy Coat:</strong> Omega 3 & 6 for healthy skin and coat"
+            ]
+          },
+          {
+            "title": "Trust & Service",
+            "badges": [
+              { "icon": "✓", "text": "Vet-Approved" },
+              { "icon": "🚚", "text": "Free Next-Day Delivery" },
+              { "icon": "⟲", "text": "Cancel Anytime" }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "checkout",
+      "type": "checkout",
+      "label": "Checkout",
+      "data": {
+        "urgencyText": "for guaranteed delivery before 1:00 PM tomorrow!",
+        "timerStart": "14:58",
+        "basketItems": [
+          {
+            "icon": "🐕‍🦺",
+            "name": "Skinner's Field & Trial Active Working Dog",
+            "meta": "15kg • Monthly Subscription\nQty: 1",
+            "originalPrice": "£49.99",
+            "price": "£39.99"
+          }
+        ],
+        "promoApplied": "VETCARE20 applied",
+        "addressFields": [
+          { "label": "Name", "value": "Sarah Mitchell" },
+          { "label": "Address", "value": "14 Cathedral Road" },
+          { "label": "City", "value": "Cardiff" },
+          { "label": "Postcode", "value": "CF11 9LJ" }
+        ],
+        "summaryRows": [
+          { "label": "Subtotal", "value": "£49.99" },
+          { "label": "Discount (20%)", "value": "-£10.00", "highlight": true },
+          { "label": "Delivery", "value": "FREE", "highlight": true }
+        ],
+        "totalLabel": "Total per Month",
+        "total": "£39.99",
+        "ctaText": "Place Order"
+      }
+    },
+    {
+      "id": "order-confirmed",
+      "type": "order-complete",
+      "label": "Complete",
+      "data": {
+        "heading": "Order Confirmed!",
+        "subheading": "Thank you, Sarah! Biscuit's premium food is on its way.",
+        "checkmarkColor": "#6B2D8B",
+        "checkmarkShadow": "rgba(107,45,139,0.3)",
+        "orderDetails": [
+          { "label": "Order Number", "value": "#VUK-2026-087534" },
+          { "label": "Product", "product": { "icon": "🐕‍🦺", "name": "Skinner's Field & Trial — Active Working Dog", "meta": "15kg, Monthly Subscription" } },
+          { "label": "Next Delivery", "value": "17 May 2026" },
+          { "label": "Price", "value": "£39.99/month" },
+          { "label": "Status", "value": "✓ Confirmed", "highlight": true }
+        ],
+        "deliveryPromise": {
+          "title": "Arriving Tomorrow Before 1:00 PM",
+          "detail": "We're prioritising this order with next-day delivery. Track your parcel from your account dashboard."
+        },
+        "lifestyleSection": {
+          "icon": "🐕",
+          "quote": "From search to subscription — Biscuit is getting the very best care",
+          "text": "You've completed the entire journey with us. From finding your vet to discovering premium nutrition matched to Biscuit's breed and lifestyle, you're giving your Labrador exactly what they need to thrive."
+        },
+        "ctaText": "View Your Profile →"
+      }
+    },
+    {
+      "id": "unified-profile",
+      "type": "unified-profile",
+      "label": "Profile",
+      "data": {
+        "darkTheme": true,
+        "headerText": "Adobe Experience Platform — Real-Time Customer Profile",
+        "profileTitle": "Sarah Mitchell — Unified Profile",
+        "profileRows": [
+          { "label": "Email", "value": "sarah.mitchell@email.com" },
+          { "label": "Phone", "value": "+44 (0)29 2034 5678" },
+          { "label": "Pet", "value": "Biscuit • Labrador Retriever • Male • 3 years" },
+          { "label": "Vet Practice", "value": "Park Veterinary Group, Cardiff" },
+          { "label": "Last Visit", "value": "15 April 2026 • Annual Check-Up" },
+          { "label": "Consent", "value": "✓ Email    ✓ SMS" },
+          { "label": "VetUK Account", "value": "Active • Monthly Subscription", "highlight": "positive" },
+          { "label": "Subscription", "value": "Skinner's F&T 15kg/monthly" },
+          { "label": "LTV Signal", "value": "High — Cross-domain engaged", "highlight": "accent" }
+        ],
+        "segmentsTitle": "Audience Segments",
+        "segments": [
+          { "name": "Active Subscribers", "description": "Premium engagement", "color": "purple" },
+          { "name": "Labrador Owners", "description": "Breed-specific offers", "color": "gold" },
+          { "name": "Annual Check-Up Due", "description": "Health reminder", "color": "green" },
+          { "name": "High-Value Cross-Domain", "description": "Multi-channel buyer", "color": "teal" },
+          { "name": "Upsell: Pet Health Plan", "description": "Conversion opportunity", "color": "red" },
+          { "name": "Referral Candidates", "description": "Advocacy potential", "color": "gold" }
+        ],
+        "timelineTitle": "Journey Timeline",
+        "timelineItems": [
+          { "label": "AI Search", "timestamp": "16 Apr" },
+          { "label": "Find Vet", "timestamp": "16 Apr" },
+          { "label": "Book", "timestamp": "16 Apr" },
+          { "label": "Visit", "timestamp": "16 Apr" },
+          { "label": "Follow-up Email", "timestamp": "17 Apr" },
+          { "label": "Cross-sell Email", "timestamp": "18 Apr" },
+          { "label": "Subscription", "timestamp": "19 Apr" },
+          { "label": "This Moment", "timestamp": "Now" }
+        ],
+        "restartText": "Restart Journey"
+      }
+    },
+    {
+      "id": "healthy-pet-club",
+      "type": "tiered-offer",
+      "label": "Pet Club",
+      "data": {
+        "headerGradient": "linear-gradient(135deg, #D4932A 0%, #6B2D8B 100%)",
+        "brandLine": "VetPartners × VetUK",
+        "heroTitle": "Healthy Pet Club",
+        "heroSubtitle": "Everything Biscuit needs, one simple monthly plan",
+        "greeting": "Hi Sarah,",
+        "introParagraphs": [
+          "As a valued Park Veterinary Group client, Biscuit is eligible for our Healthy Pet Club — a monthly plan that covers routine care essentials and saves you money."
+        ],
+        "benefits": [
+          { "icon": "💉", "text": "Annual vaccinations" },
+          { "icon": "🐛", "text": "Flea & worm treatments" },
+          { "icon": "🏥", "text": "Annual health check" },
+          { "icon": "😁", "text": "Dental check-up" },
+          { "icon": "🔬", "text": "Blood screening" },
+          { "icon": "💊", "text": "10% off all VetUK orders" }
+        ],
+        "singleOffer": {
+          "price": "£14.99",
+          "frequency": "per month • Cancel anytime",
+          "priceColor": "#27AE60",
+          "bgColor": "#F0FFF0",
+          "borderColor": "#27AE60",
+          "ctaText": "Join Healthy Pet Club",
+          "ctaColor": "#27AE60"
+        },
+        "footerNote": "You're receiving this because you opted in at Park Veterinary Group. VetPartners and VetUK are part of the same family.",
+        "continueText": "Continue →"
+      }
+    },
+    {
+      "id": "pet-health-plan",
+      "type": "tiered-offer",
+      "label": "Health Plan",
+      "data": {
+        "headerGradient": "linear-gradient(135deg, #6B2D8B 0%, #1473E6 100%)",
+        "brandLine": "VetUK Protect",
+        "heroTitle": "Pet Health Plan for Biscuit",
+        "heroSubtitle": "Tailored cover for your Labrador Retriever",
+        "greeting": "Hi Sarah,",
+        "introParagraphs": [
+          "Now that Biscuit is part of the VetPartners family, we'd love to help you protect him with a health plan designed for active Labradors."
+        ],
+        "tiers": [
+          {
+            "name": "Essential",
+            "price": "£9.99",
+            "frequency": "/month",
+            "priceColor": "#1F2937",
+            "features": ["Accident cover up to £3,000", "Third-party liability", "24/7 vet helpline", "15% multi-pet discount"]
+          },
+          {
+            "name": "Plus",
+            "price": "£19.99",
+            "frequency": "/month",
+            "featured": true,
+            "badge": "Most Popular",
+            "badgeColor": "#6B2D8B",
+            "bgColor": "#F9F5FC",
+            "borderColor": "#6B2D8B",
+            "priceColor": "#6B2D8B",
+            "features": ["Everything in Essential", "Illness cover up to £7,500", "Dental treatment", "Complementary therapy", "Behavioural therapy"]
+          },
+          {
+            "name": "Premier",
+            "price": "£29.99",
+            "frequency": "/month",
+            "priceColor": "#1F2937",
+            "features": ["Everything in Plus", "Lifetime cover up to £15,000", "Overseas travel cover", "Loss & theft cover", "Breeding cover"]
+          }
+        ],
+        "breedNote": "💡 As a Labrador owner, we recommend Plus or Premier — Labs are prone to joint conditions and benefit from the illness and complementary therapy cover.",
+        "footerNote": "VetUK Protect Pet Health Plans are underwritten by trusted UK insurers. Terms and conditions apply.",
+        "continueText": false
+      }
+    }
+  ]
+}
