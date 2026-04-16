@@ -419,41 +419,50 @@
       "type": "unified-profile",
       "label": "Profile",
       "data": {
-        "darkTheme": true,
+        "darkTheme": false,
+        "personName": "Sarah Mitchell",
+        "personSubtitle": "sarah.mitchell@gmail.com · +44 7700 123456",
+        "personEmail": "sarah.mitchell@gmail.com",
+        "orgName": "LeapPoint, LLC",
         "headerText": "Adobe Experience Platform — Real-Time Customer Profile",
         "profileTitle": "Sarah Mitchell — Unified Profile",
         "profileRows": [
-          { "label": "Email", "value": "sarah.mitchell@email.com" },
-          { "label": "Phone", "value": "+44 (0)29 2034 5678" },
-          { "label": "Pet", "value": "Biscuit • Labrador Retriever • Male • 3 years" },
+          { "label": "Full Name", "value": "Sarah Mitchell" },
+          { "label": "Email", "value": "sarah.mitchell@gmail.com" },
+          { "label": "Phone", "value": "+44 7700 123456" },
+          { "label": "Location", "value": "Cardiff, Wales" },
+          { "label": "Pet Name", "value": "Biscuit" },
+          { "label": "Pet Breed", "value": "Labrador Retriever" },
+          { "label": "Pet Age", "value": "3 years · Male" },
           { "label": "Vet Practice", "value": "Park Veterinary Group, Cardiff" },
-          { "label": "Last Visit", "value": "15 April 2026 • Annual Check-Up" },
-          { "label": "Consent", "value": "✓ Email    ✓ SMS" },
-          { "label": "VetUK Account", "value": "Active • Monthly Subscription", "highlight": "positive" },
-          { "label": "Subscription", "value": "Skinner's F&T 15kg/monthly" },
+          { "label": "Last Visit", "value": "15 April 2026 · Annual Check-Up" },
+          { "label": "Consent", "value": "✓ Email · ✓ SMS · ✓ Personalisation" },
+          { "label": "VetUK Account", "value": "Active · Monthly Subscription", "highlight": "positive" },
+          { "label": "Subscription", "value": "Skinner's Field & Trial 15kg / monthly" },
           { "label": "LTV Signal", "value": "High — Cross-domain engaged", "highlight": "accent" }
         ],
-        "segmentsTitle": "Audience Segments",
+        "segmentsTitle": "Audience Membership",
         "segments": [
-          { "name": "Active Subscribers", "description": "Premium engagement", "color": "purple" },
-          { "name": "Labrador Owners", "description": "Breed-specific offers", "color": "gold" },
-          { "name": "Annual Check-Up Due", "description": "Health reminder", "color": "green" },
-          { "name": "High-Value Cross-Domain", "description": "Multi-channel buyer", "color": "teal" },
+          { "name": "Active Subscribers", "description": "Monthly subscription active", "color": "blue" },
+          { "name": "Labrador Owners", "description": "Breed-specific segment", "color": "orange" },
+          { "name": "Annual Check-Up Due", "description": "Next: April 2027", "color": "green" },
+          { "name": "High-Value Cross-Domain", "description": "Vet + commerce engaged", "color": "blue" },
           { "name": "Upsell: Pet Health Plan", "description": "Conversion opportunity", "color": "red" },
-          { "name": "Referral Candidates", "description": "Advocacy potential", "color": "gold" }
+          { "name": "Referral Candidates", "description": "Advocacy potential", "color": "orange" }
         ],
         "timelineTitle": "Journey Timeline",
         "timelineItems": [
-          { "label": "AI Search", "timestamp": "16 Apr" },
-          { "label": "Find Vet", "timestamp": "16 Apr" },
-          { "label": "Book", "timestamp": "16 Apr" },
-          { "label": "Visit", "timestamp": "16 Apr" },
-          { "label": "Follow-up Email", "timestamp": "17 Apr" },
-          { "label": "Cross-sell Email", "timestamp": "18 Apr" },
-          { "label": "Subscription", "timestamp": "19 Apr" },
-          { "label": "This Moment", "timestamp": "Now" }
+          { "label": "AI Search" },
+          { "label": "Find Vet" },
+          { "label": "Practice" },
+          { "label": "Book" },
+          { "label": "Visit" },
+          { "label": "Follow-up" },
+          { "label": "Cross-sell" },
+          { "label": "Subscribe" },
+          { "label": "Purchase" }
         ],
-        "restartText": "Restart Journey"
+        "restartText": "Restart Journey Demo"
       }
     },
     {
